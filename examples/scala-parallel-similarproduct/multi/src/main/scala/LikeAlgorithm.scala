@@ -32,7 +32,7 @@ class LikeAlgorithm(ap: ALSAlgorithmParams) extends ALSAlgorithm(ap) {
       " Please check if DataSource generates TrainingData" +
       " and Preprator generates PreparedData correctly.")
     // create User and item's String ID to integer index BiMap
-    val userStringIntMap = BiMap.stringInt(data.users.keys)
+    val userStringIntMap = BiMap.stringInt(data.users.keys)  ?
     val itemStringIntMap = BiMap.stringInt(data.items.keys)
 
     // collect Item as Map and convert ID to Int index
